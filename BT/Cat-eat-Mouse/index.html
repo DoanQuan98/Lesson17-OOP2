@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/Cat.js"></script>
+    <script src="js/Rat.js"></script>
+</head>
+<body>
+<script>
+let Tom = new Cat('Tom', 20, 50);
+let Rats = [];
+for(let i = 0; i < 10;i++){
+    let mRandom = Math.floor(Math.random() * 100 + 1);
+    let rat = new Rat('Jerry',mRandom, mRandom);
+    Rats.push(rat);
+}
+console.log(Rats);
+console.log(Tom.eat(Rats));
+
+
+</script>
+</body>
+</html>
